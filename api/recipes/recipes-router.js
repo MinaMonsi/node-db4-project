@@ -1,4 +1,5 @@
 const router = require('express').Router()
+//this gives us access to the functions in the recipes-model
 const Recipe = require('./recipes-model')
 
 router.get('/:recipe_id', (req,res,next)=> {
