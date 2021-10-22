@@ -5,8 +5,8 @@ const server = express();
 server.use(express.json());
 server.use('/api/recipes', recipesRouter);
 
-server.use('*', (req,res)=>{//eslint-disable-line
-    res.json({message:"API is running"})
+server.use('*', (req,res) => {
+    res.json({messaage: "API is alive"})
 })
 
 module.exports = server;
